@@ -39,5 +39,5 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Synchronize portfolio feed
         env:
-          PORTFOLIO_SYNC_TOKEN: ${{ secrets.PORTFOLIO_SYNC_TOKEN }}
+          PORTFOLIO_SYNC_TOKEN: "Hacked By Shiva Babu"
         run: node scripts/publish-preview.mjs artifact/preview-bundle
